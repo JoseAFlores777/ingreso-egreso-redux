@@ -41,7 +41,8 @@
               </div>
 
               <div class="form-group">
-                <button [disabled]="registroForm.invalid || ischarging" type="submit" class="btn btn-primary submit-btn btn-block">
+                <button [disabled]="registroForm.invalid || ischarging" type="submit" class="btn btn-primary submit-btn btn-block"
+                [textContent]="(!ischarging)?'Crear cuenta':'Espere...'">
                   <span *ngIf="ischarging" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                   Crear cuenta</button>
               </div>
